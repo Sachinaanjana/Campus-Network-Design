@@ -1,0 +1,68 @@
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#do sho start
+Using 2710 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+ip dhcp pool Admin-pool
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ dns-server 192.168.1.1
+ip dhcp pool Hr-pool
+ network 192.168.2.0 255.255.255.0
+ default-router 192.168.2.1
+ dns-server 192.168.2.1
+ip dhcp pool Finance-pool
+ network 192.168.3.0 255.255.255.0
+ default-router 192.168.3.1
+ dns-server 192.168.3.1
+ip dhcp pool Business-pool
+ network 192.168.4.0 255.255.255.0
+ default-router 192.168.4.1
+ dns-server 192.168.4.1
+ip dhcp pool E&C-pool
+ network 192.168.5.0 255.255.255.0
+ default-router 192.168.5.1
+ dns-server 192.168.5.1
+ip dhcp pool A&D-pool
+ network 192.168.6.0 255.255.255.0
+ default-router 192.168.6.1
+ dns-server 192.168.6.1
+ip dhcp pool Studlb-pool
+ network 192.168.7.0 255.255.255.0
+ default-router 192.168.7.1
+ dns-server 192.168.7.1
+ip dhcp pool Itdept-pool
+ network 192.168.8.0 255.255.255.0
+ default-router 192.168.8.1
+ dns-server 192.168.8.1
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX15243UUN-
+!
+!
+!
+!
+!
+!
+
+Router(config)# 
